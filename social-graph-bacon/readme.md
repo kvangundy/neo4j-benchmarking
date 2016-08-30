@@ -10,5 +10,5 @@ For a sample social graph of 10k to 10MM (or more, I just ran out of ram on my l
 
 10MM Nodes / 500MM Rels - 40G
 
-1BN Nodes / 500MM Rels - 400G
+1BN Nodes / 50BN Rels - 400G
 
