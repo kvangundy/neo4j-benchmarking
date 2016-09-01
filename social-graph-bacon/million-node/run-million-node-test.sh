@@ -5,5 +5,5 @@ sleep 15s;
 Desktop/neo4j-enterprise-3.0.3/bin/neo4j-shell -file Desktop/benchmark-blogpost/million-node-test.cql >Desktop/million-node-results.txt;
 Desktop/neo4j-enterprise-3.0.3/bin/neo4j stop;
 #empties the billion node graph when done
-rm -R Desktop/neo4j-enterprise-3.0.3/data/databases/graph.db;
+rm -iR Desktop/neo4j-enterprise-3.0.3/data/databases/graph.db;
 
