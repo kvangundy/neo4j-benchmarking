@@ -3,6 +3,7 @@
 MATCH (n) DETACH DELETE n;
 RETURN 'DB CLEARED';
 
+RETURN "CREATE TEST";
 CREATE (:Node {prop:1});
 CREATE (:Node {prop:2});
 CREATE (:Node {prop:3});
@@ -105,7 +106,9 @@ CREATE (:Node {prop:99});
 CREATE (:Node {prop:100});
 
 //Read
+CREATE INDEX ON :Node(prop);
 
+RETURN "INDEXED READ TEST";
 MATCH (n:Node {prop:1}) RETURN n.prop;
 MATCH (n:Node {prop:2}) RETURN n.prop;
 MATCH (n:Node {prop:3}) RETURN n.prop;
@@ -208,6 +211,8 @@ MATCH (n:Node {prop:99}) RETURN n.prop;
 MATCH (n:Node {prop:100}) RETURN n.prop;
 
 //update
+
+RETURN "UPDATE TEST";
 MATCH (n:Node {prop:1}) SET n.bool = TRUE;
 MATCH (n:Node {prop:2}) SET n.bool = TRUE;
 MATCH (n:Node {prop:3}) SET n.bool = TRUE;
@@ -310,6 +315,7 @@ MATCH (n:Node {prop:99}) SET n.bool = TRUE;
 MATCH (n:Node {prop:100}) SET n.bool = TRUE;
 
 //Delete
+RETURN "DELETE TEST";
 MATCH (n:Node {prop:1}) DETACH DELETE n;
 MATCH (n:Node {prop:2}) DETACH DELETE n;
 MATCH (n:Node {prop:3}) DETACH DELETE n;

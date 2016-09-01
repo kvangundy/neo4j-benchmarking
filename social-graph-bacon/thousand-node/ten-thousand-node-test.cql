@@ -12,7 +12,7 @@ CREATE INDEX ON :User(external_id);
 //100k friends
 MATCH (u:User) 
 WITH u
-SKIP 0 LIMIT 1000
+SKIP 0 LIMIT 5000
 // this 100 below can also be a toInt( rand()*200 )
 UNWIND range(1,100) as totalSize
 MATCH (u2:User) WHERE id(u2) = toInt( rand() * totalSize ) 
