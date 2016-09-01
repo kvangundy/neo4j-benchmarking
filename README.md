@@ -4,6 +4,7 @@ basic benchmarking scripts
 ### Done: 
 
 - shortestPath: Neo4j is O(1) due to Index-Free Adjacency
+- import: load csv / batch import
 
 ### To Do: 
 
