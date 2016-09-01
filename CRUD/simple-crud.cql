@@ -1,5 +1,8 @@
 //simple "isolated" crud operations 100 creates, reads, updates, deletes 
 
+MATCH (n) DETACH DELETE n;
+RETURN 'DB CLEARED';
+
 CREATE (:Node {prop:1});
 CREATE (:Node {prop:2});
 CREATE (:Node {prop:3});
