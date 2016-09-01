@@ -5,4 +5,4 @@ Desktop/neo4j-enterprise-3.0.3/bin/neo4j-shell -file Desktop/benchmark-blogpost/
 
 #empties the billion node graph when done
 
-rm -iR Desktop/neo4j-enterprise-3.0.3/data/databases/graph.db
+rm -R Desktop/neo4j-enterprise-3.0.3/data/databases/graph.db
