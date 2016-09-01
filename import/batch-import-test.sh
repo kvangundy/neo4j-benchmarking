@@ -1,1 +1,1 @@
-
+/path/to/your/neo4j/neo4j-enterprise-3.0.3/bin/neo4j-import --into //path/to/your/neo4j/neo4j-enterprise-3.0.3/data/databases/retail.db --id-type string --nodes:Customer /path/to/your/neo4j/neo4j-enterprise-3.0.3/import/ten-million-ids.csv
