@@ -1,6 +1,6 @@
 #WARNING:
 
-Empty your /data/graph.db directory before running the batch importer or makea  new .db directory and point neo4j to that new location. To change the database neo4j starts up against modify `dbms.active_database=graph.db` with the `neo4j-enterprise-3.X/conf/neo4j.conf`file. These scripts will clear the db multiple times. 
+Empty your /data/graph.db directory before running the batch importer or make a  new .db directory and point neo4j to that new location. To change the database neo4j starts up against modify `dbms.active_database=graph.db` with the `neo4j-enterprise-3.X/conf/neo4j.conf`file. These scripts will clear the db multiple times. 
 
 #LOAD CSV
 
